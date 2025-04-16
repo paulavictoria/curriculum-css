@@ -4,9 +4,8 @@ body {
 
 .idInformation {
     text-align: justify;
-    font-weight: bold;
     text-decoration: none;
-    background: linear-gradient(to right, #b8b8b8, #868686);
+    background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 30px;
@@ -15,9 +14,9 @@ body {
 
 .titleId {
     text-align: center;
-    font-weight: bold;
+    font-weight:lighter;
     text-decoration: none;
-    background: linear-gradient(to right, #b8b8b8, #868686);
+    background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 30px;
