@@ -9,6 +9,34 @@
     --corBranca: #FFFFFF;
 }
 
+/*:root {
+    --cor-principal: rgba(64, 17, 13, 1);
+    --cor-secundaria: rgba(140, 58, 58, 1);
+    --cor-branca: #ffffff;
+    --cor-preta: #000000;
+    --cor-laranja: #ffa500;
+    --cor-azul-escuro: #00008b;
+  }*/
+
+
+  /*body {
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+  }
+  
+  h1 {
+    color: var(--cor-principal);
+  }
+  
+  button {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+  }
+  
+  a {
+    color: var(--cor-azul-escuro);
+  } */
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1em;
