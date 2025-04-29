@@ -5,8 +5,84 @@
     --cor4: #DDA853;
     --cor5: #FFFFFF;
     --cor6: #0b0d12;
+    --cor7: rgb(88, 19, 105);
+    --cor8: rgba(102, 28, 121, 0.644);
+    --corbg: #20191B;
     --corPreta: #000000;
     --corBranca: #FFFFFF;
+    --corLinear: linear-gradient(153deg, rgba(64, 17, 13, 1) 0%, rgba(140, 58, 58, 1) 61%);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    text-align: justify;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#menuPaula {
+    background-color: var(--cor7);
+    padding: 1em;
+}
+
+.scroll {
+    scroll-margin-top: 85px;
+}
+
+a.menuPaula {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--cor8);
+}
+
+
+a.menuPaula:hover {
+    background-color: var(--cor6);
+    color: var(--corBranca);
+}
+
+img.foto {
+    width: 350px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--cor3);
+}
+
+div.hrBcg {
+    background-color: var(--cor4);
+}
+
+p.justificado {
+    text-align: justify;
+}
+
+.tab {
+    margin-left: 1em;
 }
 
 /*:root {
@@ -19,7 +95,7 @@
   }*/
 
 
-  /*body {
+/*body {
     background-color: var(--cor-branca);
     color: var(--cor-preta);
   }
@@ -36,59 +112,3 @@
   a {
     color: var(--cor-azul-escuro);
   } */
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.1em;
-    background-color: var(--corBranca);
-}
-
-footer {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#menuPaula {
-    background-color: var(--cor3);
-    padding: 1em;     
-}
-
-.scroll {
-    scroll-margin-top: 85px;
-}
-
-a.menuPaula {
-    color: var(--cor1);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    transition: background-color 0.3s, color 0.3s;
-    background-color: var(--cor3);
-}
-
-
-a.menuPaula:hover {
-    background-color: var(--cor4);
-    color: var(--corBranca);
-}
-
-img.foto {
-    width: 350px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--cor3);
-}
-
-div.hrBcg {
-    background-color: var(--cor4);
-}
-
-p.justificado {
-    text-align: justify;
-}
-
-.tab {
-    margin-left: 1em;
-}
