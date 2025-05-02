@@ -6,6 +6,7 @@
     --cor-roxo-claro: rgb(88, 19, 105);
     --cor-roxo-escuro: rgb(119, 10, 119);
     --cor-roxo-dark: rgb(60, 16, 71);
+    --cor-roxo-dark2: rgb(42, 11, 49);
     --corPreta: #000000;
     --corBranca: #FFFFFF;
 }
@@ -39,7 +40,7 @@ footer {
 #menuPaula {
    /* background: #8C1AD9;
     background: linear-gradient(348deg, rgba(140, 26, 217, 1) 0%, rgba(44, 42, 89, 1) 49%);*/
-    background-color: var(--cor-roxo-dark); 
+    background-color: var(--cor-roxo-dark2); 
     padding: 1em;
 }
 
@@ -84,11 +85,11 @@ h6 {
 }
 
 .namePaula {
-    color: var(--cor-roxo-claro);
+    color: var(--corBranca);
 }
 
 .cargoPaula {
-    color: var(--cor-roxo-escuro);
+    color: var(--cor-roxo-bebe);
     font-size: 1.5em;
 }
 
