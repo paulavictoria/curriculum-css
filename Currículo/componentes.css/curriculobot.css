@@ -26,7 +26,7 @@ header {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1em;
-    color: var(--cor1);
+    color: var(--cor6);
     background-color: var(--cor5);
 }
 
