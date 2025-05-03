@@ -38,9 +38,9 @@ footer {
 }
 
 #menuPaula {
-   /* background: #8C1AD9;
+    /* background: #8C1AD9;
     background: linear-gradient(348deg, rgba(140, 26, 217, 1) 0%, rgba(44, 42, 89, 1) 49%);*/
-    background-color: var(--cor-roxo-dark2); 
+    background-color: var(--cor-roxo-dark2);
     padding: 1em;
 }
 
@@ -81,8 +81,47 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--cor-roxo-escuro);
+    color: var(--cor1);
 }
+
+#nomeForm,
+#formName {
+    color: var(--cor6);
+    font-size: 1.5em;
+}
+
+#nomeForm,
+#sobrenomeForm,
+#emailForm,
+#telefoneForm,
+#turnoForm,
+#linguagensForm,
+#dataForm,
+#arquivoForm,
+#idiomaForm,
+#mensagemForm,
+#botaoForm {
+    color: var(--cor6);
+    font-size: 1em;
+}
+
+#ptbr, #ingles, #espanhol, #alemao, .form-check-label {
+    color: var(--cor6);
+    font-size: 1em;
+}
+
+label[for="dataEntrega"] {
+    color: black;
+    font-size: 1em;
+}
+
+
+/*#formulario {
+    background-color: var(--cor-roxo-dark);
+    border-radius: 60em;
+    padding: 1em;
+    margin: 1em;
+}*/ 
 
 .namePaula {
     color: var(--corBranca);

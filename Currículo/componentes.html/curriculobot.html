@@ -210,178 +210,166 @@
                 <h2 class="scroll">Contato</h2>
                 <div class="container">
                     <center>
-                        <p class="justificado">Para entrar em contato, utilize o formulário abaixo e deixe sua
+                        <p class="align-items-center">Para entrar em contato, utilize o formulário abaixo e deixe sua
                             mensagem
                             ou envie um e-mail para
                             <a href="mailto:paulavgomesp@gmail.com">paulavgomesp@gmail.com</a>
                         <div class="container">
 
-                            <!--formulario-->
+                            <!--formulário início-->
 
-                            <form action="">
+                            <fieldset class="p-4 rounded shadow bg-light" id="formulario">
+                                <legend class="text-center mb-4" id="formName">Formulário de Contato</legend>
+
+                                <!-- Nome e Sobrenome -->
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="nome" class="form-label"><strong>Nome</strong><span
-                                                class="obrigatorio">*</span></label>
+                                        <label for="nome" class="form-label" id="nomeForm"><strong>Nome</strong><span
+                                                class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="nome" placeholder="Informe seu nome"
                                             required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="sobrenome" class="form-label"><strong>Sobrenome</strong> <span
-                                                class="obrigatorio">*</span></label>
+                                        <label for="sobrenome" class="form-label"
+                                            id="sobrenomeForm"><strong>Sobrenome</strong><span
+                                                class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="sobrenome"
                                             placeholder="Informe seu sobrenome" required>
                                     </div>
                                 </div>
+
+                                <!-- Email e Telefone -->
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="email" class="form-label"><strong>Email</strong> <span
-                                                class="obrigatorio">*</span></label>
+                                        <label for="email" class="form-label" id="emailForm"><strong>Email</strong><span
+                                                class="text-danger">*</span></label>
                                         <input type="email" class="form-control" id="email"
                                             placeholder="xxxxx@xxxxx.xxx" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="telefone" class="form-label"><strong>Telefone</strong><span
-                                                class="obrigatorio">*</span></label>
+                                        <label for="telefone" class="form-label"
+                                            id="telefoneForm"><strong>Telefone</strong><span
+                                                class="text-danger">*</span></label>
                                         <input type="tel" class="form-control" id="telefone"
                                             placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}"
                                             required>
                                     </div>
                                 </div>
 
-                                <!--form data-arquivo -->
-
-                                <div class="row align-items-center">
+                                <!-- Data/Hora e Arquivo -->
+                                <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="dataHora" class="form-label"><strong>Data/Hora</strong><span
-                                                class="obrigatorio">*</span></label>
+                                        <label for="dataHora" class="form-label"
+                                            id="dataForm"><strong>Data/Hora</strong><span
+                                                class="text-danger">*</span></label>
                                         <input type="datetime-local" class="form-control" id="dataHora" required
                                             min="2025-05-01" max="2025-12-31">
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="formFile" class="form-label"><strong>Arquivo do
-                                                Prótotipo</strong></label>
+                                        <label for="formFile" class="form-label" id="arquivoForm"><strong>Arquivo do
+                                                Protótipo</strong></label>
                                         <input class="form-control" type="file" id="formFile">
                                     </div>
                                 </div>
 
-                                <!--linguagens-->
-
-
-                                <div class="dropdown">
-                                    <label for="mensagem" class="form-label"><strong>Quais linguagens você
-                                            prefere?</strong></label>
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Selecione
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Phyton</a></li>
-                                        <li><a class="dropdown-item" href="#">Javascript</a></li>
-                                        <li><a class="dropdown-item" href="#">Java</a></li>
-                                        <li><a class="dropdown-item" href="#">C</a></li>
-                                        <li><a class="dropdown-item" href="#">C++</a></li>
-                                        <li><a class="dropdown-item" href="#">C#</a></li>
-                                        <li><a class="dropdown-item" href="#">Typescript</a></li>
-                                        <li><a class="dropdown-item" href="#">Go - Golang</a></li>
-                                        <li><a class="dropdown-item" href="#">Rust</a></li>
-                                        <li><a class="dropdown-item" href="#">PHP</a></li>
-                                        <li><a class="dropdown-item" href="#">Swift</a></li>
-                                        <li><a class="dropdown-item" href="#">Kotlin</a></li>
-                                    </ul>
+                                <!-- Linguagens e Idiomas -->
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="linguagens" class="form-label" id="linguagensForm"><strong>Quais
+                                                linguagens você prefere?</strong></label>
+                                        <select class="form-select" id="linguagens" multiple>
+                                            <option>Python</option>
+                                            <option>JavaScript</option>
+                                            <option>Java</option>
+                                            <option>C</option>
+                                            <option>C++</option>
+                                            <option>C#</option>
+                                            <option>TypeScript</option>
+                                            <option>Go - Golang</option>
+                                            <option>Rust</option>
+                                            <option>PHP</option>
+                                            <option>Swift</option>
+                                            <option>Kotlin</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="idioma" class="form-label"
+                                            id="idiomaForm"><strong>Idioma</strong></label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="idioma" id="ptbr"
+                                                value="Português" checked>
+                                            <label class="form-check-label" for="ptbr">Português - (PT BR)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="idioma" id="ingles"
+                                                value="Inglês">
+                                            <label class="form-check-label" for="ingles">Inglês</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="idioma" id="espanhol"
+                                                value="Espanhol">
+                                            <label class="form-check-label" for="espanhol">Espanhol</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="idioma" id="alemao"
+                                                value="Alemão">
+                                            <label class="form-check-label" for="alemao">Alemão</label>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <!--idioma-->
-
+                                <!-- Turno de Preferência e Data Prevista -->
                                 <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <label for="turno" class="form-label" id="turnoForm"><strong>Turno de
+                                                Preferência</strong></label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="manha" value="Manhã">
+                                            <label class="form-check-label" for="manha">Manhã</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="tarde" value="Tarde">
+                                            <label class="form-check-label" for="tarde">Tarde</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="noite" value="Noite">
+                                            <label class="form-check-label" for="noite">Noite</label>
+                                        </div>
+                                    </div>
                                     <div class="col-md-6 mb-3">
-                                        <ul class="list-group">
-                                            <label for="mensagem" class="form-label"><strong>Idioma</strong></label>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idPtbr" checked>
-                                                <label class="form-check-label" for="idPtbr">Português - (PT
-                                                    BR)</label>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idIngles>
-                                              <label class=" form-check-label" for="idIngles">Inglês</label>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idEspanhol">
-                                                <label class="form-check-label" for="idEspanhol">Espanhol</label>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idAlemao">
-                                                <label class="form-check-label" for="idAlemao">Alemão</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!--banco de dados-->
-
-                                    <div class="col-md-6 mb-3">
-                                        <ul class="list-group">
-                                            <label for="mensagem" class="form-label"><strong>Banco de
-                                                    Dados</strong></label>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idMysql" checked>
-                                                <label class="form-check-label" for="idMysql">MySQL</label>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idPostgre">
-                                                <label class=" form-check-label" for="idPostgre">PostgreSQL</label>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idMongo">
-                                                <label class="form-check-label" for="idMongo">MongoDB</label>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <input class="form-check-input me-1" type="radio" name="listGroupRadio"
-                                                    value="" id="idOutra">
-                                                <label class="form-check-label" for="idOutra">Outra</label>
-                                            </li>
-                                        </ul>
+                                        <label for="dataEntrega" class="form-label"><strong>Data Prevista para
+                                                Entrega</strong></label>
+                                        <input type="date" class="form-control" id="dataEntrega" required>
                                     </div>
                                 </div>
 
-                                <!--campo mensagem-->
-
-                                <div class="row">
-                                    <div class="col-12 mb-3">
-                                        <label for="mensagem" class="form-label"><strong>Mensagem: </strong></label>
-                                        <textarea class="form-control" id="mensagem" rows="4"
-                                            placeholder="Deixe aqui sua mensagem!"></textarea>
-                                    </div>
+                                <!-- Mensagem -->
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label"
+                                        id="mensagemForm"><strong>Mensagem</strong></label>
+                                    <textarea class="form-control" id="mensagem" rows="4"
+                                        placeholder="Deixe aqui sua mensagem!"></textarea>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <button type="reset" class="btn formulario mx-2">Cancelar</button>
-                                        <button type="submit" class="btn formulario mx-2">Enviar</button>
-                                    </div>
+                                <!-- Botões -->
+                                <div class="text-center" id="botaoForm">
+                                    <button type="reset" class="btn btn-danger mx-2">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary mx-2">Enviar</button>
                                 </div>
-                            </form>
-                        </div>
+                            </fieldset>
 
-                        <!--endereço-->
+                            <!--endereço-->
 
 
-                        <div class="card hrBcg my-2"></div>
-                        <h2 class="scroll">Endereço</h2>
-                        <center>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8730528136525!2d-34.92714242424565!3d-8.114406181196872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e5c4266411d%3A0xe41e02189531b4a7!2sR.%20Padre%20Lima%20e%20S%C3%A1%2C%2079%20-%20Ipsep%2C%20Recife%20-%20PE%2C%2051350-300!5e0!3m2!1spt-BR!2sbr!4v1746195879380!5m2!1spt-BR!2sbr"
-                                width="1000" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </center>
-                        <div class="card hrBcg my-2"></div>
+                            <div class="card hrBcg my-2"></div>
+                            <h2 class="scroll">Endereço</h2>
+                            <center>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8730528136525!2d-34.92714242424565!3d-8.114406181196872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e5c4266411d%3A0xe41e02189531b4a7!2sR.%20Padre%20Lima%20e%20S%C3%A1%2C%2079%20-%20Ipsep%2C%20Recife%20-%20PE%2C%2051350-300!5e0!3m2!1spt-BR!2sbr!4v1746195879380!5m2!1spt-BR!2sbr"
+                                    width="1000" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </center>
+                            <div class="card hrBcg my-2"></div>
     </main>
 
     <!--footer-->
