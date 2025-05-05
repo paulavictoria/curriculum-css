@@ -16,8 +16,8 @@ body {
     height: 100%;
     margin: 0;
     padding-top: 50px;
-    background: #F1B6F2;
-    background: linear-gradient(348deg, rgb(119, 10, 119) 0%, rgb(0, 0, 0) 49%);
+    background: #f9c4fa;
+   /* background: linear-gradient(348deg, rgb(119, 10, 119) 0%, rgb(0, 0, 0) 49%);*/
     background-size: cover;
     background-repeat: no-repeat;
     /*p evitar repetição*/
@@ -29,7 +29,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     font-size: 1.1em;
-    color: var(--corBranca);
+    color: var(--cor-roxo-dark2);
     background-color: var(--cor-roxo-bebe);
 }
 
@@ -38,8 +38,6 @@ footer {
 }
 
 #menuPaula {
-    /* background: #8C1AD9;
-    background: linear-gradient(348deg, rgba(140, 26, 217, 1) 0%, rgba(44, 42, 89, 1) 49%);*/
     background-color: var(--cor-roxo-dark2);
     padding: 1em;
 }
@@ -81,12 +79,12 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--cor1);
+    color: var(--cor-roxo-dark2);
 }
 
 #nomeForm,
 #formName {
-    color: var(--cor6);
+    color: var(--cor-roxo-claro);
     font-size: 1.5em;
 }
 
@@ -101,7 +99,7 @@ h6 {
 #idiomaForm,
 #mensagemForm,
 #botaoForm {
-    color: var(--cor6);
+    color: var(--cor-roxo-dark2);
     font-size: 1em;
 }
 
@@ -205,56 +203,27 @@ a:hover {
 }
 
 .namePaula {
-    color: var(--corBranca);
+    color: var(--cor-roxo-dark2);
+    text-shadow: var(--cor-roxo-claro) 0px 0px 1px;
 }
 
 .cargoPaula {
-    color: var(--cor-roxo-bebe);
+    color: var(--cor-roxo-claro);
     font-size: 1.5em;
 }
 
 div.hrBcg {
-    background-color: var(--cor-roxo-escuro);
+    background-color: var(--cor-roxo-bebe);
 }
+
 
 p.justificado {
     text-align: justify;
 }
 
 
-/*card portfolio bootstrap cards carrossel (pequeno)
-d-flex flex-column flex-md-row elementos ao lado
-*/
-
 /**!important;/
 
-/*:root {
-    --cor-principal: rgba(64, 17, 13, 1);
-    --cor-secundaria: rgba(140, 58, 58, 1);
-    --cor-branca: #ffffff;
-    --cor-preta: #000000;
-    --cor-laranja: #ffa500;
-    --cor-azul-escuro: #00008b;
-  }*/
 
 
-/*body {
-    background-color: var(--cor-branca);
-    color: var(--cor-preta);
-  }
-  
-  h1 {
-    color: var(--cor-principal);
-  }
-  
-  button {
-    background-color: var(--cor-laranja);
-    color: var(--cor-branca);
-  }
-  
-  a {
-    color: var(--cor-azul-escuro);
-  } */
-
- 
 
