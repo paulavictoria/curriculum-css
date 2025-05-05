@@ -115,13 +115,94 @@ label[for="dataEntrega"] {
     font-size: 1em;
 }
 
-
 /*#formulario {
     background-color: var(--cor-roxo-dark);
     border-radius: 60em;
     padding: 1em;
     margin: 1em;
 }*/ 
+
+a {
+    text-decoration: none; 
+    color: inherit; /*herdar cor preta do pai*/
+}
+
+a:hover {
+    text-decoration:underline; 
+    color: inherit; 
+}
+
+/*table formação*/
+#tabelaFormacao {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tabelaFormacao thead tr {
+    text-align: left;
+    font-weight: bold;
+}
+
+#cabecalhoFormacao th {
+    background-color: var(--cor-roxo-dark);
+    color: var(--corBranca);
+}
+
+#tabelaFormacao tbody tr:hover {
+    cursor: pointer;
+}
+
+/*espaçamento das células*/
+#tabelaFormacao td, #tabelaFormacao th {
+    padding: 12px 15px;
+}
+
+/*texto longo ajuste*/
+#tabelaFormacao td {
+    word-wrap: break-word;
+}
+
+
+/*table experiência*/
+#tabelaExperiencia {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/*thead da table*/
+#tabelaExperiencia thead tr {
+    text-align: left;
+    font-weight: bold;
+}
+
+/*cabecalho da table*/
+#cabecalho th {
+    background-color: var(--cor-roxo-dark);
+    color: var(--corBranca);
+}
+
+#tabelaExperiencia tbody tr:hover {
+    cursor: pointer;
+}
+
+#tabelaExperiencia td, #tabelaExperiencia th {
+    padding: 12px 15px;
+}
+
+#tabelaExperiencia td {
+    word-wrap: break-word;
+}
 
 .namePaula {
     color: var(--corBranca);
@@ -139,27 +220,6 @@ div.hrBcg {
 p.justificado {
     text-align: justify;
 }
-
-.tab {
-    margin-left: 1em;
-}
-
-
-table {
-    border-collapse: collapse;
-    /*sem bordas*/
-    width: 100%;
-    padding: 0.5em;
-
-}
-
-#cabecalho {
-    background-color: var(--cor-roxo-escuro);
-    color: var(--corBranca);
-    padding: 0.5em;
-    text-align: center;
-}
-
 
 
 /*card portfolio bootstrap cards carrossel (pequeno)
@@ -195,3 +255,6 @@ d-flex flex-column flex-md-row elementos ao lado
   a {
     color: var(--cor-azul-escuro);
   } */
+
+ 
+
