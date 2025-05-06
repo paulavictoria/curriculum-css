@@ -34,10 +34,14 @@ body {
     background-color: var(--corPreta);
 }
 
-
-footer {
-    font-family: monospace;
-}
+.cards {
+    background-color: var(--cor-roxo-dark);
+    color: var(--corBranca);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}       
 
 #menuPaula {
     background-color: var(--cor-roxo-dark2);
@@ -203,15 +207,24 @@ a:hover {
 }
 
 #namePaula {
-    color: var(--corBranca);
+    color: var(--cor-roxo-bebe);
     text-shadow: var(--cor-roxo-claro) 0px 0px 1px;
     padding: 0.10em;
 }
 
 #cargoPaula {
-    color: var(--cor-roxo-claro);
+    color: var(--cor-roxo-dark);
     font-size: 1.5em;
+    font-style: italic; 
     padding: 0.15em;
+}
+
+#sobrePaula {
+    color: var(--cor-roxo-bebe);
+    font-size: 1em;
+    padding: 0.15em;
+    text-align-last: auto;
+
 }
 
 div.hrBcg {
@@ -223,6 +236,14 @@ p.justificado {
     text-align: justify;
 }
 
+footer {
+    font-family: monospace;
+    font-size: 0.8em;
+    color: var(--cor-roxo-bebe);
+    text-align: center;
+    padding: 1em;
+    background-color: var(--cor-roxo-dark2);
+}
 
 /**!important;/
 
