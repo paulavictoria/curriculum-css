@@ -385,3 +385,106 @@
     </footer>
 </body>
 </html>
+
+
+  <!--formação
+
+        <div class="card hrBcg my-4"></div>
+        <div id="formacao" class="container scroll">
+            <h2>Formação Acadêmica</h2>
+            <div class="container align-items-center">
+                <table class="table table-sm table-hover my-2 rounded shadow bg-light" id="tabelaFormacao">
+                    <thead>
+                        <tr id="cabecalhoFormacao">
+                            <th width="10%">Período</th>
+                            <th>Instituição</th>
+                            <th>Curso</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2018 - 2020</td>
+                            <td>Escola Técnica Estadual Porto Digital (ETEPD)</td>
+                            <td><a href="https://www.ufpe.br/engenharia-biomedica-bacharelado-ctg"
+                                    target="_blank">Tecnólogo em Desenvolvimento de Sistemas com Ênfase em Novas
+                                    Tecnologias</a></td>
+                            <td>Curso Técnico Completo em Desenvolvimento de Sistemas.</td>
+                        </tr>
+                        <tr>
+                            <td>2020 - 2021</td>
+                            <td>Senac Pernambuco</td>
+                            <td><a href="https://www.pe.senac.br/cursos-2/" target="_blank">Aprendizagem Profissional em
+                                    Serviços Administrativos</a></td>
+                            <td>Curso Profissionalizante em Serviços Administrativos.</td>
+                        </tr>
+                        <tr>
+                            <td>2024 - 2026</td>
+                            <td>Faculdade Senac</td>
+                            <td><a href="https://faculdadesenacpe.edu.br/" target="_blank">Tecnólogo em Análise e
+                                    Desenvolvimento de Sistemas</a></td>
+                            <td>Curso Tecnólogo em Análise e Desenvolvimento de Sistemas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    -->
+
+    
+        <!--experiência
+
+        <div class="card hrBcg my-4"></div>
+        <h2 class="scroll" id="experiencia">Experiência Profissional</h2>
+        <div class="container align-items-center">
+            <table class="table table-sm table-hover my-2 rounded shadow bg-light" id="tabelaExperiencia">
+                <thead>
+                    <tr id="cabecalho">
+                        <th width="10%">Período</th>
+                        <th>Instituição</th>
+                        <th>Cargo</th>
+                        <th>Descrição</th>
+                        <th>Localização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020 - 2021</td>
+                        <td>FlorArte</td>
+                        <td>Jovem Aprendiz no Marketing do Produto</td>
+                        <td>Atuando como aprendiz no Marketing e auxiliando em edição de fotos.</td>
+                        <td>Recife, PE</td>
+                    </tr>
+                    <tr>
+                        <td>2022 - 2024</td>
+                        <td>Drogasil</td>
+                        <td>Atendente 2 (Balconista/Supervisor)</td>
+                        <td>Atuando como balconista de farmácia e gerenciamento de pessoas.</td>
+                        <td>Recife, PE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    -->
+
+     <!--\( e \) — Parênteses ao redor do DDD. \d{2} — Dois dígitos para o DDD. \d{5} — Cinco dígitos para o número. — Hífen separando os números.\d{4} — Quatro dígitos finais.-->
+
+     
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+    
+            // Captura os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const sobrenome = document.getElementById('sobrenome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const mensagem = document.getElementById('mensagem').value;
+    
+            // Exibe uma mensagem de confirmação
+            alert(`Obrigado, ${nome} ${sobrenome}! Sua mensagem foi enviada com sucesso.\n\nDetalhes:\nE-mail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`);
+    
+            // Opcional: Limpa o formulário após o envio
+            event.target.reset();
+        });
+    </script>
